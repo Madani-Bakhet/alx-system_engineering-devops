@@ -1,2 +1,3 @@
 #!/bin/bash
-pwd -L
+readlink -f “${BASH_SOURCE:-$0}”
+
