@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR % 2 == 1' "$1"
+cat -n | cut -b 6- | grep ^[13579] | cut -f2
